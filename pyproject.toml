@@ -1,0 +1,7 @@
+[project]
+name = "MLOps"
+version = "0.1.0"
+description = "A project to employ CI/CD with Machine Learning models - in this case Weather Prediction"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
