@@ -1,0 +1,15 @@
+run:
+  name: graphcast_stage1
+  seed: 42
+  output_root: outputs
+
+model:
+  name: GraphCast_small
+  provider: graphcast
+
+input:
+  sample_path: data/sample/graphcast_dataset_source-era5_date-2022-01-01_res-0.25_levels-13_steps-01.nc
+
+artifact:
+  forecast_filename: forecast.nc
+  manifest_filename: manifest.json
