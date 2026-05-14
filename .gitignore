@@ -1,3 +1,13 @@
+# Virtual environment
 .venv*
+
+# Python and uv files
+uv.lock
 .python-version
 **/__pycache__/
+
+# inputdata
+data
+
+# output data
+outputs
