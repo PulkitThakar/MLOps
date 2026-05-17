@@ -6,9 +6,15 @@ run:
 model:
   name: GraphCast_small
   provider: graphcast
+  checkpoint_path: artifacts/params/graphcast_params_GraphCast_small - ERA5 1979-2015 - resolution 1.0 - pressure levels 13 - mesh 2to5 - precipitation input and output.npz
+
+stats:
+  diffs_stddev_by_level_path: artifacts/stats/graphcast_stats_diffs_stddev_by_level.nc
+  mean_by_level_path: artifacts/stats/graphcast_stats_mean_by_level.nc
+  stddev_by_level_path: artifacts/stats/graphcast_stats_stddev_by_level.nc
 
 input:
-  sample_path: data/sample/graphcast_dataset_source-era5_date-2022-01-01_res-0.25_levels-13_steps-01.nc
+  sample_path: data/sample/graphcast_dataset_source-era5_date-2022-01-01_res-1.0_levels-13_steps-01.nc
 
 artifact:
   forecast_filename: forecast.nc
